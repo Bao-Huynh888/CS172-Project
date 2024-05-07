@@ -34,14 +34,17 @@ def process_post(post):
     return data
 
 def crawl_reddit(subreddit_name, output_file, max_size = 500):
+    visited_Ids = set()
     with open(output_file, 'a') as f:
         total_size = os.path.getsize(output_file)
         subreddit = reddit.subreddit(subreddit_name)
         for post in subreddit.new(limit=None):
+            if post.id in visited_Ids:
+                continue
             post_data = process_post(post)
             json.dump(post_data, f)
             f.write('\n')
-
+            visited_Ids.add(post.id)
             #checking file size
             total_size = os.path.getsize(output_file)
             if total_size > max_size * 1024 * 1024:
