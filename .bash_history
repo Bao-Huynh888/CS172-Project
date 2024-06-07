@@ -117,3 +117,4 @@ nano main.py
 git remote add origin https://github.com/Bao-Huynh888/CS172-Project.git
 git branch -M main
 git push -u origin main
+exit
