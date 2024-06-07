@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+    <ul>
+        {% for result in results %}
+            <li>
+                <strong>{{ result.title }}</strong><br>
+                Author: {{ result.author }}<br>
+                URL: <a href="{{ result.url }}">{{ result.url }}</a><br>
+                HTML Title: {{ result.html_title }}<br>
+                Score: {{ result.score }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to search</a>
+</body>
+</html>
