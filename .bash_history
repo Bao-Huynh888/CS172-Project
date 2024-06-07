@@ -81,3 +81,21 @@ python3 parse.py
 vim reddit_posts_ucr.json 
 vim parse.py 
 python3 parse.py
+li
+cd
+git remote add origin https://github.com/Bao-Huynh888/CS172-Project.git
+git remote -v
+git init
+fatal: not a git repository (or any of the parent directories): .git
+git remote add origin https://github.com/Bao-Huynh888/CS172-Project.git
+git add .
+git commit -m "Adding draft for part b"
+git config --global user.email "bhuyn048@ucr.edu"
+git config --global user.name "Bao-Huynh888"
+git commit -m "Adding draft for part b"
+git push
+git push --set-upstream origin master
+git add .
+git commit -m "Adding draft for part b"
+git push
+git push --set-upstream origin master
