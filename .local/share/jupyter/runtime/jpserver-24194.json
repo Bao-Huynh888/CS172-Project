@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "0.0.0.0",
+  "password": false,
+  "pid": 24194,
+  "port": 8888,
+  "root_dir": "/home/cs172",
+  "secure": false,
+  "sock": "",
+  "token": "",
+  "url": "http://class-075:8888/",
+  "version": "2.14.0"
+}
