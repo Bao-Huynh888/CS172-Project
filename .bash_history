@@ -99,3 +99,21 @@ git add .
 git commit -m "Adding draft for part b"
 git push
 git push --set-upstream origin master
+git add .
+git commit -m "Adding draft for part b"
+git push
+git push --set-upstream origin master
+vim pylucene_sample.py
+python3 py_lucene_sample.py
+python3 py_lycene_sample.py
+vim pylucene_sample.py
+python3 pylucene_sample.py
+mkdir projectB
+cd projectB/
+touch main.py
+code main.py
+scp cs172@class-075:/home/cs172/projectB/main.py /local/path
+nano main.py
+git remote add origin https://github.com/Bao-Huynh888/CS172-Project.git
+git branch -M main
+git push -u origin main
